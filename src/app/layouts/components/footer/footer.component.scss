@@ -1,0 +1,32 @@
+.card {
+ padding: 2% 7%;
+ color: white;
+}
+
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+ul>li {
+ padding: 4px;
+}
+
+ul>li:hover {
+ color: #957bda;
+ cursor: pointer;
+}
+
+.social>i:hover {
+ color: #957bda;
+ cursor: pointer;
+}
+
+.policy>div {
+ padding: 4px;
+}
+
+.heading {
+ color: white;
+}

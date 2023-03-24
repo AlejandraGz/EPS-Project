@@ -1,0 +1,51 @@
+<!-- Formularios -->
+<div class="contenedor-formularios">
+  <!-- Links de los formularios -->
+  <ul class="contenedor-tabs">
+    <li class="tab tab-segunda"><a routerLink="/iniciarSesion">Iniciar Sesión</a></li>
+    <li class="tab tab-primera active"><a routerLink="/registrarse">Registrarse</a></li>
+  </ul>
+
+  <!-- Contenido de los Formularios -->
+  <div class="contenido-tab">
+    <!-- Registrarse -->
+    <div id="registrarse">
+      <h1>Registrarse</h1>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <div class="fila-arriba">
+          <div class="contenedor-input">
+            <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+              <mat-label>Nombre</mat-label>
+              <input name="fullName" ngModel matInput #input maxlength="100" placeholder="Ex. Nougat" required>
+            </mat-form-field>
+          </div>
+
+          <div class="contenedor-input">
+            <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+              <mat-label>Apellido</mat-label>
+              <input name="lastName" ngModel matInput #input maxlength="100" placeholder="Ex. Nougat" required>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="contenedor-input">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Email</mat-label>
+            <input name="email" ngModel matInput placeholder="pat@example.com" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="contenedor-input">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input name="password" ngModel matInput [type]="hide ? 'password' : 'text'" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <input type="submit" class="button button-block" value="registrarse">
+      </form>
+    </div>
+  </div>
+</div>

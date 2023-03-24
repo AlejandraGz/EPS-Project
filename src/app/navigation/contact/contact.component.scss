@@ -1,0 +1,48 @@
+.container {
+  width: 72vw;
+  background-color: white;
+  padding: 5% 10%;
+}
+.texto {
+  text-align: justify;
+}
+h2 {
+  color: #0a47a3;
+}
+label {
+  color: #333;
+}
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 40%;
+  margin-left: 3px;
+  background-color: #0a47a3;
+  color: white;
+}
+.btn-send:hover {
+  background-color: #325c9a;
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+}
+
+.container-form {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.horario {
+  background-color: #0a47a3;
+  color: white;
+  padding: 5%;
+}
+
+.card {
+  border: none;
+  border-radius: 0%;
+}

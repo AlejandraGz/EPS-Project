@@ -1,0 +1,25 @@
+nav {
+  background-color: #0a47a3;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.avatar {
+  width: 5%;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
